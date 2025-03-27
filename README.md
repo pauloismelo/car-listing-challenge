@@ -50,12 +50,13 @@ I choose MySql for this project. It isn't a technicall decision. It's just becau
 
 I created 2 tables: 
 1 - Uploads (Id, fileName, RegisterDate, Status)
-2- Lines (Id, IdUpload, error)
+2- Lines (Id, IdUpload, make, model, year, price, mileage, color, vin)
 
-I save all uploads in the Uploads table e just errors line in the Lines tables. 
+I save all uploads in the Uploads table e just valid Lines in the Lines tables. 
 With the records in the lines table, I allow the user to resend the spreadsheet and correct the lines that were previously in error.
 
 With each correction submission, I check to see if there are any more error rows in the database. If there are none, I change the upload status to "success".
+This allows the user to submit the spreadsheet multiple times until all rows are corrected. This includes the ability for the user to add rows to the spreadsheet and submit while the Upload status is 'Pendent'.
 
 
 # Future improvements
