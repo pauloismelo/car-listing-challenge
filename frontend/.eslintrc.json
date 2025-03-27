@@ -1,0 +1,7 @@
+{
+  "extends": "next",
+  "rules": {
+    "react/prop-types": "off", //I used Tailwind CSS, so I don't need prop-types
+    "react/react-in-jsx-scope": "off" //I used Next.js, so I don't need to import React
+  }
+}
